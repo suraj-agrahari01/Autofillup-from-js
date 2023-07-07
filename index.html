@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Auto Fill</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<form>
+			<div class="billing">
+				<div class="billing-h"><h1>Billing Address</h1></div>
+				<div class="bill">
+					<label for="fname">Fist Name</label>
+					<input
+						type="text"
+						name="fname"
+						placeholder="Sagar"
+						id="fname"
+						required /><br />
+				</div>
+
+				<div class="bill">
+					<label for="lname">Last Name</label>
+					<input
+						type="text"
+						name="lname"
+						placeholder="Agrahari"
+						id="lname"
+						required /><br />
+				</div>
+
+				<div class="bill">
+					<label for="primaryaddress">Store Address:</label>
+					<input
+						type="text"
+						name="Address"
+						placeholder="Toronto"
+						id="primaryaddress"
+						required /><br />
+				</div>
+
+				<div class="bill">
+					<label for="city">City</label>
+					<input
+						type="text"
+						name="city"
+						placeholder="Scarbourge"
+						id="city"
+						required /><br />
+				</div>
+
+				<div class="bill">
+					<label for="state">State</label
+					><select id="state" name="state">
+						<option value="Ford">Select</option>
+						<option value="Chevy">State 1</option>
+						<option value="Dodge">State 2</option>
+						<option value="Truck">State 3</option></select
+					><br />
+				</div>
+
+				<div class="bill">
+					<label for="primaryzip">Zip code:</label>
+					<input
+						type="text"
+						name="Zip code"
+						placeholder="1234"
+						id="primaryzip"
+						pattern="[0-9]{6}"
+						required /><br />
+				</div>
+
+				<div class="bill">
+					<label for="phone">Phone</label>
+					<input
+						type="tel"
+						name="phone"
+						placeholder=" 123XXXXXXX"
+						id="phone"
+						required /><br />
+				</div>
+			</div>
+
+			<div class="delivery">
+				<div class="delivery-h"><h1>Delivery Address</h1></div>
+
+				<div class="checked-b">
+					<input
+						type="checkbox"
+						id="same"
+						name="same"
+						onchange="addressFunction()" />
+					<label for="same"
+						>If same secondary address select this box.</label
+					>
+				</div>
+				<div class="bill">
+					<label for="fname">Fist Name</label>
+					<input
+						type="text"
+						name="fname"
+						id="fname1"
+						required /><br />
+				</div>
+
+				<div class="bill">
+					<label for="lname">Last Name</label>
+					<input
+						type="text"
+						name="lname"
+						id="lname1"
+						required /><br />
+				</div>
+
+				<div class="bill">
+					<label for="secondaryaddress">Store Address:</label>
+					<input
+						type="text"
+						name="Address"
+						id="secondaryaddress"
+						required /><br />
+				</div>
+
+				<div class="bill">
+					<label for="city">City</label>
+					<input type="text" name="city" id="city1" required /><br />
+				</div>
+
+				<div class="bill">
+					<label for="state">State</label
+					><select id="state1" name="state">
+						<option value="Ford">Select</option>
+						<option value="Chevy">State 1</option>
+						<option value="Dodge">State 2</option>
+						<option value="Truck">State 3</option></select
+					><br />
+				</div>
+
+				<div class="bill">
+					<label for="secondaryzip">Zip code:</label>
+					<input
+						type="text"
+						name="Zip code"
+						id="secondaryzip"
+						pattern="[0-9]{6}"
+						required /><br />
+				</div>
+
+				<div class="bill">
+					<label for="phone1">Phone</label>
+					<input type="tel" name="phone" id="phone1" required /><br />
+				</div>
+			</div>
+
+			<button>submit</button>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>
